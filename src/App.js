@@ -2,13 +2,13 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import NoMatch from './Components/NoMatch/NoMatch';
+import FriendDetail from './Components/FriendDetail/FriendDetail';
 
 function App() {
   return (
@@ -20,6 +20,9 @@ function App() {
         </Route>
         <Route exact path="/">
           <Home/>
+        </Route>
+        <Route path="/friend/:friendId">
+          <FriendDetail/>
         </Route>
         <Route>
           <NoMatch/>

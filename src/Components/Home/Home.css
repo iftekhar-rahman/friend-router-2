@@ -1,0 +1,10 @@
+.home-area {
+    padding: 70px 0;
+}
+.single-friend {
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    min-height: 240px;
+}
